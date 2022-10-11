@@ -1,0 +1,66 @@
+.sidebar{
+  position: absolute;
+  top:0;
+  right:0;
+}
+.sidebar-content{
+  width:60px;
+  height:100vh;
+}
+.sidebar-c-ul{
+  width:100%;
+  height:100%;
+
+  padding:60px 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar-c-u-li_common{
+  width:100%;
+  height:50%;
+}
+
+.sns_icon_ul{
+  width:100%;
+  height:100%;
+
+  display:flex;
+  flex-direction: column-reverse;
+}
+.sns_icon_ul li{
+  width:100%;
+  height:auto;
+  margin-bottom:15px;
+}
+.sns_icon_ul li a div{
+  width:30px;
+  height:30px;
+  border-radius: 100%;
+  margin:0 auto;
+}
+.line_icon{
+  background:url(../image/common/line-icon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.twitter_icon{
+  background:url(../image/common/twitter-icon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mail_icon{
+  background:url(../image/common/mail-icon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width:800px){
+  .sidebar{
+    display:none;
+  }
+}

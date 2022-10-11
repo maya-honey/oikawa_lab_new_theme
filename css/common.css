@@ -1,0 +1,348 @@
+@charset "utf-8";
+/*
+theme Name: Oikawa_lab_theme
+Author: Masaya yosida
+Description: 及川ラボオリジナルWPテーマです。
+version： 1.0.0
+*/
+
+/*font-list-----start*/
+@font-face {
+	font-family: "Nasu";
+	src: url(../font_list/font_nasu/Nasu-Bold.ttf);
+}
+@font-face {
+	font-family: "Nasu";
+	src: url(../font_list/font_nasu/Nasu-Regular.ttf);
+}
+@font-face {
+	font-family: "NasuM";
+	src: url(../font_list/font_nasu/NasuM-Bold.ttf);
+}
+@font-face {
+	font-family: "NasuM";
+	src: url(../font_list/font_nasu/NasuM-Regular.ttf);
+}
+@font-face {
+	font-family: "ニコ角";
+	src: url(../font_list/nicokaku-plus/nicokaku_v1.ttf);
+}
+@font-face {
+	font-family: "ニコモジ";
+	src: url(../font_list/nicomoji/nicomoji_1.00.ttf);
+}
+
+@font-face {
+	font-family: "Noto Sans JP Black";
+	src: url(../font_list/font_notosan/NotoSansJP-Black.otf);
+}
+@font-face {
+	font-family: "Noto Sans JP Bold";
+	src: url(../font_list/font_notosan/NotoSansJP-Bold.otf);
+}
+@font-face {
+	font-family: "Noto Sans JP Light";
+	src: url(../font_list/font_notosan/NotoSansJP-Light.otf);
+}
+@font-face {
+	font-family: "Noto Sans JP Medium";
+	src: url(../font_list/font_notosan/NotoSansJP-Medium.otf);
+}
+@font-face {
+	font-family: "Noto Sans JP";
+	src: url(../font_list/font_notosan/NotoSansJP-Regular.otf);
+}
+@font-face {
+	font-family: "Noto Sans JP Thin";
+	src: url(../font_list/font_notosan/NotoSansJP-Thin.otf);
+}
+/*font-list-----end*/
+
+/*basic-setteing-----satart*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,
+ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+figcaption,figure,footer,header,hgroup,menu,nav,section,
+summary,time,mark,audio,video {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+ins {
+  text-decoration: none;
+  color: #000;
+  background-color: #ff9;
+}
+mark {
+  font-weight: bold;
+  font-style: italic;
+  color: #000;
+  background-color: #ff9;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+/*basic-setteing-----end*/
+
+body p:empty::before {
+  content: none !important;
+}
+body p:empty::after {
+  content: none !important;
+}
+
+/*setting-----start*/
+body {
+	font-family:"游ゴシック Medium","游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP","メイリオ", sans-serif,"Nasu", "NasuM", 'メイリオ', "ニコ角", "ニコモジ", Meiryo,'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic',sans-serif,"Noto Sans JP Black","Noto Sans JP Light","Noto Sans JP Medium","Noto Sans JP","Noto Sans JP Thin";
+  width:100vw;
+	height:100vh;
+
+	position: relative;
+	z-index: 0;
+
+	overflow-y: hidden;
+
+  background:linear-gradient(175deg,#004BB1,#0960d4);
+
+  margin:0px;
+}
+ul{
+  padding-left:0px;
+  list-style-type: none;
+  margin:0;
+}
+p,a,h1,h2,h3,h4{
+	font-size:14px;
+	color:#000;
+	text-decoration: none;
+  font-family:"游ゴシック Medium","游ゴシック", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "Noto Sans JP", "Yu Gothic", "メイリオ", sans-serif,"Nasu", "NasuM", 'メイリオ', "ニコ角", "ニコモジ", Meiryo,'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic',sans-serif;
+  font-weight:normal;
+}
+b, strong, .bold{
+ font-family: "游ゴシック Medium","游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic","Noto Sans JP", ... ,sans-serif;
+}
+p{
+	letter-spacing: 0.8px;
+}
+
+@media screen and (max-width:800px){
+	body{
+		background:#004BB1;
+	}
+}
+/*setting-----end*/
+
+/*scrollbar-----start*/
+::-webkit-scrollbar{
+	display:none;
+	height:10px;
+  width:10px;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0px #333333;
+}
+::-webkit-scrollbar-thumb{
+  width:15px;
+  height:15px;
+  background:#bfbfbf;
+  border-radius:8px;
+}
+/*scrollbar-----end*/
+
+.main_frame{
+  position:absolute;
+  z-index:100;
+  top:50%;
+  left:50%;
+  -webkit-transform:translateX(-50%) translateY(-50%);
+     -moz-transform:translateX(-50%) translateY(-50%);
+      -ms-transform:translateX(-50%) translateY(-50%);
+       -o-transform:translateX(-50%) translateY(-50%);
+          transform:translateX(-50%) translateY(-50%);
+
+  background:#fff;
+
+  border-radius:12px;
+
+  width:calc(100vw - 120px);
+  height:calc(100vh - 120px);
+
+  overflow-y:hidden;
+}
+@media screen and (max-width:800px){
+  .main_frame{
+    width:calc(100vw - 30px);
+    height:calc(100vh - 120px);
+
+    top:60px;
+    left:15px;
+
+    -webkit-transform:none;
+       -moz-transform:none;
+        -ms-transform:none;
+         -o-transform:none;
+            transform:none;
+
+    overflow-y:scroll;
+  }
+}
+/*trans設定*/
+.page_active_1{
+  margin-top:0px;
+}
+
+.page_active_2{
+  margin-top:calc(-100vh + 120px);
+}
+
+.page_active_3{
+  margin-top:calc(-100vh * 2 + 120px * 2);
+}
+
+.page_active_4{
+  margin-top:calc(-100vh * 3 + 120px * 3);
+}
+
+.page_active_5{
+  margin-top:calc(-100vh * 4 + 120px * 4);
+}
+
+.page_active_6{
+  margin-top:calc(-100vh * 5 + 120px * 5);
+}
+
+.page_active_7{
+  margin-top:calc(-100vh * 6 + 120px * 6);
+}
+
+.page_active_8{
+  margin-top:calc(-100vh * 7 + 120px * 7);
+}
+
+section{
+  opacity:0;
+}
+@media screen and (max-width:800px){
+  section{
+    opacity:1;
+  }
+}
+.page_active{
+  animation-name: page_active;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+@keyframes page_active {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+
+/*-----------page_counter-----------*/
+.page_counter{
+  position:absolute;
+  bottom:0;
+  right:0;
+
+  width:30px;
+  height:60px;
+}
+.pc-ul{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap:wrap;
+}
+.pc-ul li{
+  width:100%;
+  height:50%;
+}
+.pc-ul li div{
+  width:100%;
+  height:100%;
+  text-align:center;
+  line-height:30px;
+  font-weight:normal;
+  font-size:14px;
+}
+.all_page{
+  position: relative;
+}
+.all_page::after{
+  content:"";
+  width:20px;
+  height:1px;
+  background:#000;
+
+  position: absolute;
+  top:0%;
+  left:50%;
+  -webkit-transform:translateX(-50%) translateY(0%);
+     -moz-transform:translateX(-50%) translateY(0%);
+      -ms-transform:translateX(-50%) translateY(0%);
+       -o-transform:translateX(-50%) translateY(0%);
+          transform:translateX(-50%) translateY(0%) rotate(-25deg);
+}
+@media screen and (max-width:800px){
+  .page_counter{
+    display:none;
+  }
+}
